@@ -8,7 +8,7 @@ import { HistoricalTexts } from '../interfaces/historicalTexts.interface';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  historicalTexts:  HistoricalTexts[] = historicalTextsData.historicalTexts
+  public historicalTexts:  HistoricalTexts[] = historicalTextsData.historicalTexts;
   
   ngOnInit(): void {
   

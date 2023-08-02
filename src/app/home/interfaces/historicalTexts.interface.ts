@@ -1,3 +1,4 @@
 export interface HistoricalTexts {
-    text:string 
-}[]
+    text: string;
+}
+

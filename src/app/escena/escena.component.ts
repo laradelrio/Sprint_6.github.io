@@ -8,8 +8,6 @@ import { HistoricalTexts } from '../home/interfaces/historicalTexts.interface';
 })
 export class EscenaComponent {
 
-  @Input()
-  public texts: HistoricalTexts[] = [{
-    text: "hello"
-  }]
+  @Input() 
+  public textsList: HistoricalTexts[] = []
 }
