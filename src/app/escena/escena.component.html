@@ -1,1 +1,13 @@
-<p *ngFor="let textObject of textsList">{{textObject.text}}</p>
+<button (click)="prev()">Anterior</button>
+<button (click)="next()">Següent</button>
+
+<p 
+    *ngFor="let textObject of textsList;
+    let i = index;"  
+    [ngClass]="{
+        'currentSentence': currentSentence === i  , 
+    }">
+
+    {{textObject.text}}
+</p>
+

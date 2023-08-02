@@ -8,6 +8,22 @@ import { HistoricalTexts } from '../home/interfaces/historicalTexts.interface';
 })
 export class EscenaComponent {
 
-  @Input() 
+  @Input()
   public textsList: HistoricalTexts[] = []
+
+  public currentSentence = 0;
+
+  prev(): void {
+    if (this.currentSentence > 0) {
+      this.currentSentence--;
+    }
+  }
+
+  next(): void {
+    if (this.currentSentence < (this.textsList.length - 1)) {
+      this.currentSentence++;
+    }
+  }
+
 }
+
