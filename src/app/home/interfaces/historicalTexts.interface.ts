@@ -1,4 +1,5 @@
 export interface HistoricalTexts {
-    text: string;
+    txt: string;
+    img: string;
 }
 

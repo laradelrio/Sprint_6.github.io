@@ -1,3 +1,7 @@
+<div id="backgoundImage" [ngStyle]="{
+    'background-image': 'url(' + this.textsList[this.currentSentence].img + ')',   
+ }"> 
+
 <button (click)="prev()">Anterior</button>
 <button (click)="next()">Següent</button>
 
@@ -8,6 +12,9 @@
         'currentSentence': currentSentence === i  , 
     }">
 
-    {{textObject.text}}
+    {{textObject.txt}}
 </p>
+
+</div>
+
 
