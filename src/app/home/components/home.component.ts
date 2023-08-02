@@ -8,9 +8,16 @@ import { HistoricalTexts } from '../interfaces/historicalTexts.interface';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public historicalTexts:  HistoricalTexts[] = historicalTextsData.historicalTexts;
+  public historicalTexts:  HistoricalTexts[] = historicalTextsData.historicalTexts
+  public isShownEscena: boolean = false;
+  
   
   ngOnInit(): void {
   
+  }
+
+  showEscena(): void{
+    this.isShownEscena = true;
+    
   }
 }

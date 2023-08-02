@@ -11,7 +11,7 @@ export class EscenaComponent {
   @Input()
   public textsList: HistoricalTexts[] = []
 
-  public currentSentence = 0;
+  public currentSentence: number = 0;
 
   prev(): void {
     if (this.currentSentence > 0) {
