@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { HistoricalTexts } from '../home/interfaces/historicalTexts.interface';
+import { StoryTexts } from '../home/interfaces/storyTexts.interface';
 
 @Component({
   selector: 'app-escena',
@@ -9,7 +9,7 @@ import { HistoricalTexts } from '../home/interfaces/historicalTexts.interface';
 export class EscenaComponent {
 
   @Input()
-  public textsList: HistoricalTexts[] = []
+  public textsList: StoryTexts[] = []
 
   public currentSentence: number = 0;
 
@@ -24,7 +24,5 @@ export class EscenaComponent {
       this.currentSentence++;
     }
   }
-
-  
 }
 

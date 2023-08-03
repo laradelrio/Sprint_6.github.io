@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import historicalTextsData from '../../../assets/historicalTexts.json'
-import { HistoricalTexts } from '../interfaces/historicalTexts.interface';
+import storyTextsData from '../../../assets/storyTexts.json'
+import { StoryTexts } from '../interfaces/storyTexts.interface'
 
 @Component({
   selector: 'app-home',
@@ -8,15 +8,14 @@ import { HistoricalTexts } from '../interfaces/historicalTexts.interface';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public historicalTexts:  HistoricalTexts[] = historicalTextsData.historicalTexts;
+  public storyTextsHome: StoryTexts[] = storyTextsData.storyTexts;
   public isShownEscena: boolean = false;
-  
-  showEscena(): void{
+
+  showEscena(): void {
     this.isShownEscena = true;
   }
-  
+
   ngOnInit(): void {
-  
+
   }
- 
 }

@@ -1,20 +1,17 @@
 <div id="backgoundImage" [ngStyle]="{
     'background-image': 'url(' + this.textsList[this.currentSentence].img + ')',   
- }"> 
+ }">
+    <div id="buttons">
+        <button (click)="prev()">Anterior</button>
+        <button (click)="next()">Següent</button>
+    </div>
 
-<button (click)="prev()">Anterior</button>
-<button (click)="next()">Següent</button>
-
-<p 
-    *ngFor="let textObject of textsList;
-    let i = index;"  
-    [ngClass]="{
+    <p *ngFor="let textObject of textsList;
+    let i = index;" [ngClass]="{
         'currentSentence': currentSentence === i  , 
     }">
 
-    {{textObject.txt}}
-</p>
+        {{textObject.txt}}
+    </p>
 
 </div>
-
-

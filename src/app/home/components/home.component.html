@@ -1,10 +1,7 @@
-<div class="container" *ngIf="!isShownEscena">
-    <p>Follow the story line un/a client/a té una web de gestió empresarial desenvolupada amb Angular 
-    (com a producte principal) i ens ha demanat que desenvolupem un tutorial, en el qual, 
-    mitjançant dos botons els nous usuaris/àries poden avançar o retrocedir en els consells, 
-    modificant-se el text d'ajuda i la imatge de fons. </p>
-    <button (click)="showEscena()"> Start </button>
+<div class="container" *ngIf="!isShownEscena" [ngStyle]="{'background-image': 'url(../../../assets/images/space.jpg)'}">
+    <div id="home-content">
+        <p>Embarca en una història d'un heroi a l'espai!</p>
+        <button (click)="showEscena()"> Començar </button>
+    </div>
 </div>
-<app-escena [textsList]="historicalTexts" *ngIf="isShownEscena"></app-escena>
-
-
+<app-escena [textsList]="storyTextsHome" *ngIf="isShownEscena"></app-escena>
